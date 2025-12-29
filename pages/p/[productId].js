@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
-import api from '../../utils/api';
+import api from '@/utils/api';
 import OwnerAuth from '../../components/OwnerAuth';
 
 export default function ProductPage() {

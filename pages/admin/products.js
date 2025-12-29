@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import api from '../../utils/api';
+import api from '@/utils/api';
 import { useRouter } from 'next/router';
 
 export default function ProductManagement() {
