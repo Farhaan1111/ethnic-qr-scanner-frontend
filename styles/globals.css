@@ -1,0 +1,30 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --primary-color: #8B4513;
+  --secondary-color: #D2691E;
+  --accent-color: #FFD700;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.owner-panel {
+  border-left: 4px solid #10B981;
+  background-color: #ECFDF5;
+}
+
+.product-image {
+  transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+
+.auth-overlay {
+  backdrop-filter: blur(5px);
+}
