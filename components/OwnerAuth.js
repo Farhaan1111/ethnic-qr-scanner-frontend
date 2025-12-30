@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import axios from 'axios';
+import api from '@/utils/api';
 
 export default function OwnerAuth({ onLogin, onClose }) {
   const [password, setPassword] = useState('');
@@ -12,7 +12,7 @@ export default function OwnerAuth({ onLogin, onClose }) {
     setError('');
 
     try {
-      const response = await axios.post('/api/auth/owner-login', {
+      const response = await api.post('/api/auth/owner-login', {
         password
       });
 
