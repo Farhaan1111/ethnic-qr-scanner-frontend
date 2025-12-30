@@ -70,9 +70,9 @@ export default function ProductPage() {
     try {
       const token = localStorage.getItem('ownerToken');
       if (token) {
-        const response = await api.post('/api/auth/verify-token', {}, {
-          headers: { Authorization: `Bearer ${token}` }
-        });
+        const response = await api.get('/api/auth/verify-token', {
+  headers: { Authorization: `Bearer ${token}` }
+});
         setIsOwner(response.data.valid);
       }
     } catch (error) {
